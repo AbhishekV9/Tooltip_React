@@ -27,16 +27,14 @@ export default class tooltip extends Component{
         
         const position=this.props.position;
         const { hovered }=this.state;
-        console.log(hovered)
-        return(
-            <div className="color half" >
-                <div onMouseEnter={this.onHover} onMouseLeave={this.onLeave}>
-                    <h1>this is {position}</h1>
-                    <span style={{visibility: hovered ? 'visible' : 'hidden'}}>
-                        <p>Thanks for Hovering! i am a tooltip</p>
+        return(          
+                <div className="tooltip" onMouseEnter={this.onHover} onMouseLeave={this.onLeave}>
+                    Hover over me! Tooltip-{position}
+                    <span style={{visibility: hovered ? 'visible' : 'hidden'}} 
+                    className={ `tooltiptext ${position}` } >
+                        Thanks for Hovering! i am a tooltip
                     </span>
-                </div>
-            </div>
+                </div>         
         )
     }
 }

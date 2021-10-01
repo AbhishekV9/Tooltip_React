@@ -1,27 +1,28 @@
 import React, { Component } from 'react';
 import Tooltip from './tooltip';
+import '../stylesheet/app.css'
 
 export default class App extends Component{
  render(){
    return(
      <div>
-       <div>
+       <div className="w-50 tc mt-5">
           <h1>Welcome to Tooltip Component</h1>
        </div>
-       <div>
-          <div>
+       <div className="w-50 tc">
+          <div className="mt-3">
             <Tooltip position="top"/>
           </div>
               
-          <div>
+          <div className="mt-3"> 
             <Tooltip position="left"/>
           </div>
            
-          <div>
+          <div className="mt-3">
             <Tooltip position="right"/>
           </div>
 
-          <div>
+          <div className="mt-3">
             <Tooltip position="bottom"/>
           </div>
 
