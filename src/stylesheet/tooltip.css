@@ -1,3 +1,4 @@
+/* styles for tooltip component */
 
 .tooltip{
     position: relative;
@@ -6,6 +7,7 @@
     margin-top: 15px;
 }
 
+/* for tooltip text */
 .tooltiptext {
     width: 200px;
     background-color: black;
@@ -19,6 +21,7 @@
     transition: visibility 0.2s;
 }
 
+/* styling for class as top */
 .top {
     bottom: 100%;
     left: 50%;
@@ -26,6 +29,7 @@
     margin-left: -100px; 
 }
 
+/* styling for class as bottom */
 .bottom{
   top: 100%;
   left: 50%;
@@ -33,17 +37,22 @@
   margin-left: -100px;
 }
 
+/* styling for class as left */
 .left{
     right:100%;
     top:-55%;
     margin-right:7px;
 }
 
+/* styling for class as right */
 .right{
     left:100%;
     top:-50%;
     margin-left:7px;
 }
+
+
+/* below stylings are for the arrow according to the position i.e class assigned */
 
 .top::after {
     content: " ";

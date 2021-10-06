@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Tooltip from './tooltip';
 import '../stylesheet/app.css'
 
+//rendering tooltip component from App component and passing position as props to tooltip component
 export default class App extends Component{
  render(){
    return(
